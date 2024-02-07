@@ -1,0 +1,29 @@
+name: chemsearchBenchmarkEnv
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  # Linters
+  - black
+  - flake8
+  - isort
+  - pre-commit
+
+  # Testing
+  - pytest
+  - pytest-mock
+
+  # Python
+  - python=3.11
+
+  # Libraries
+  - aiohttp
+  - attrs
+  - pyprojroot
+  - requests
+  - structlog
+  - tqdm
+
+  - pip~=22.0
+  - pip:
+      - -e .

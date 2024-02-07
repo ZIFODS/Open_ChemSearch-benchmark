@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: chemsearch-benchmark
+spec:
+  serviceAccountName: app
+  containers:
+    - name: chemsearch-benchmark
+      image: "insertValueHere"
+      resources:
+        limits:
+          nvidia.com/gpu: 0
+      volumeMounts:
+        - name: persistent-storage
+          mountPath: /data
+      command: ["/bin/sh"]
+      args: ["-c", "while true; do sleep 5; done"]
+  volumes:
+    - name: persistent-storage
+      persistentVolumeClaim:
+        claimName: efs-chemsearch-claim
