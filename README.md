@@ -1,3 +1,6 @@
+![image](https://github.com/ZIFODS/Open_ChemSearch-benchmark/assets/122999957/8648f74f-d1f8-4a37-a508-0cbc54571a8b)
+
+
 # Chemsearch Benchmark
 Benchmark of chemsearch running on a cluster.
 
@@ -58,3 +61,5 @@ The following console output is typical for successful completion of the benchma
 Querying cluster:
 100%|██████████████| 10282/10282 [20:44<00:00, 8.26it/s]
 ```
+
+![image](https://github.com/ZIFODS/Open_ChemSearch-benchmark/assets/122999957/27a5db15-15e3-4de5-8420-c4e1b6e66cc8)
